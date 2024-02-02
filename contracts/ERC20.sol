@@ -59,7 +59,6 @@ import "./IERC20.sol";
         _balances[msg.sender] = _totalSupply;
         _owner = msg.sender;
         _paused = false;
-
         // Emitting the Transfer event for the initial supply
         emit Transfer(address(0), msg.sender, _totalSupply);
     }
@@ -231,9 +230,16 @@ import "./IERC20.sol";
         _owner = newOwner;
     }
 
-    function name() external view override returns (string memory) {}
-
-    function symbol() external view override returns (string memory) {}
-
-    function decimals() external view override returns (uint8) {}
+    function name() external view override returns (string memory) {
+        return _name;
+    }
+    
+    function symbol() external view override returns (string memory) {
+        return _symbol;
+    }
+    
+    function decimals() external view override returns (uint8) {
+        return _decimals;
+    }
+    
 }
