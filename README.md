@@ -1,4 +1,4 @@
-# Blue-Sky-Test
+# Hardhat-token-contract-erc20
 
 This project includes the smart contract code for the BlueSkyToken ERC-20 token, along with instructions for setup, deployment, and any relevant changes.
 
